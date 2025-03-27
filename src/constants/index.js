@@ -202,67 +202,55 @@ import {
   
   const projects = [
     {
-      name: "Car Rent",
+      name: "AI Chatbot",
       description:
-        "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+        "Built an AI-powered chatbot using the Hugging Face API, leveraging NLP techniques for natural and interactive conversations.",
       tags: [
         {
-          name: "react",
+          name: "Python",
           color: "blue-text-gradient",
         },
         {
-          name: "mongodb",
+          name: "Hugging Face API",
           color: "green-text-gradient",
-        },
-        {
-          name: "tailwind",
-          color: "pink-text-gradient",
         },
       ],
       image: carrent,
-      source_code_link: "https://github.com/",
+      source_code_link: "https://github.com/codebyyashvi/Chatbot",
     },
     {
-      name: "Job IT",
+      name: "Netflix Clone",
       description:
-        "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+        "Designed a Netflix UI clone with responsive web design using HTML, CSS, and JavaScript, improving frontend skills.",
       tags: [
         {
-          name: "react",
+          name: "HTML",
           color: "blue-text-gradient",
         },
         {
-          name: "restapi",
+          name: "CSS",
           color: "green-text-gradient",
-        },
-        {
-          name: "scss",
-          color: "pink-text-gradient",
         },
       ],
       image: jobit,
-      source_code_link: "https://github.com/",
+      source_code_link: "https://netflix-hqwf2w9dn-yashvis-projects-b766d513.vercel.app/",
     },
     {
-      name: "Trip Guide",
+      name: "Dice Game",
       description:
-        "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+        "This Dice Game is only made using ReactJS, one can enjoy this game by just rolling the dice. The design of this game is also much attractive and unique.",
       tags: [
         {
-          name: "nextjs",
+          name: "React JS",
           color: "blue-text-gradient",
         },
         {
-          name: "supabase",
+          name: "tailwind",
           color: "green-text-gradient",
-        },
-        {
-          name: "css",
-          color: "pink-text-gradient",
         },
       ],
       image: tripguide,
-      source_code_link: "https://github.com/",
+      source_code_link: "https://dice-game-5n028u84c-yashvis-projects-b766d513.vercel.app/",
     },
   ];
   

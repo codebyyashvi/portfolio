@@ -6,6 +6,10 @@ import { SectionWrapper } from '../hoc'
 import { projects } from '../constants'
 import { fadeIn, textVariant } from '../utils/motion'
 
+const ProjectCard = () => {
+  
+}
+
 const Works = () => {
   return (
     <>
@@ -20,6 +24,15 @@ const Works = () => {
         >
           Here are some of my projects that showcase my problem-solving skills, creativity, and passion for technology. From AI-powered solutions to web and mobile applications, each project reflects my ability to design, develop, and optimize systems that make an impact.
         </motion.p>
+      </div>
+      <div className='mt-20 flex flex-wrap gap-7'>
+        {projects.map((project, index) => (
+          <ProjectCard 
+            key={`project-${index}`}
+            index={index}
+            {...project}
+          />
+        ))}
       </div>
     </>
   )
