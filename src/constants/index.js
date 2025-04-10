@@ -23,7 +23,7 @@ import {
   import scikit from '../assets/tech/scikit.png'
   import mysql from '../assets/tech/mysql.png'
   import ml from '../assets/tech/ml.png'
-  import chatbot from '../assets/chatbot.png'
+  import chatbot from '../assets/Chatbot.png'
   import netflix from '../assets/Netflix.png'
   import dice from '../assets/DiceGame.png'
   import mastanee from '../assets/Mastanee.png'
