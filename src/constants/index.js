@@ -8,18 +8,10 @@ import {
     html,
     css,
     reactjs,
-    redux,
     tailwind,
     nodejs,
     mongodb,
     git,
-    figma,
-    docker,
-    meta,
-    tesla,
-    shopify,
-    carrent,
-    jobit,
     tripguide,
     threejs
   } from "../assets";
@@ -31,6 +23,11 @@ import {
   import scikit from '../assets/tech/scikit.png'
   import mysql from '../assets/tech/mysql.png'
   import ml from '../assets/tech/ml.png'
+  import chatbot from '../assets/chatbot.png'
+  import netflix from '../assets/Netflix.png'
+  import dice from '../assets/DiceGame.png'
+  import mastanee from '../assets/Mastanee.png'
+  import farmer from '../assets/farmer.jpg'
   
   export const navLinks = [
     {
@@ -215,8 +212,9 @@ import {
           color: "green-text-gradient",
         },
       ],
-      image: carrent,
+      image: chatbot,
       source_code_link: "https://github.com/codebyyashvi/Chatbot",
+      isVercel: false
     },
     {
       name: "Netflix Clone",
@@ -232,8 +230,9 @@ import {
           color: "green-text-gradient",
         },
       ],
-      image: jobit,
+      image: netflix,
       source_code_link: "https://netflix-hqwf2w9dn-yashvis-projects-b766d513.vercel.app/",
+      isVercel: true
     },
     {
       name: "Dice Game",
@@ -249,8 +248,49 @@ import {
           color: "green-text-gradient",
         },
       ],
-      image: tripguide,
+      image: dice,
       source_code_link: "https://dice-game-5n028u84c-yashvis-projects-b766d513.vercel.app/",
+      isVercel: true
+    },
+    {
+      name: "Mastanee-Music Mansion",
+      description:
+        "A music playlist website with an attractive design, offering the latest songs, including K-pop, old hits, and more.",
+      tags: [
+        {
+          name: "HTML",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "CSS",
+          color: "green-text-gradient",
+        },
+        {
+          name: "JavaScript",
+          color: "pink-text-gradient",
+        },
+      ],
+      image: mastanee,
+      source_code_link: "https://github.com/codebyyashvi/Mastanee-MusicMansion",
+      isVercel: false
+    },
+    {
+      name: "Farmer's Lifeline",
+      description:
+        "In India, many farmers are doing suicides and major issue is lack of money. To resolve that I developed a Flutter-based mobile app connecting farmers with government schemes and NGOs, enabling direct support and reducing financial distress.",
+      tags: [
+        {
+          name: "Flutter",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "Dart",
+          color: "green-text-gradient",
+        },
+      ],
+      image: farmer,
+      source_code_link: "https://github.com/codebyyashvi/farmers_lifeline",
+      isVercel: false
     },
   ];
   
