@@ -3,11 +3,6 @@ import {
     backend,
     creator,
     web,
-    javascript,
-    typescript,
-    html,
-    css,
-    reactjs,
     tailwind,
     nodejs,
     mongodb,
@@ -15,6 +10,11 @@ import {
     tripguide,
     threejs
   } from "../assets";
+  import javascript from "../assets/tech/javascript.png";
+  import typescript from "../assets/tech/typescript.png";
+  import html from "../assets/tech/html.png";
+  import css from "../assets/tech/css.png";
+  import reactjs from "../assets/tech/reactjs.png";
   import fall from '../assets/company/fall.png'
   import infosys from '../assets/company/infosys.png'
   import flip from '../assets/company/flip.webp'
