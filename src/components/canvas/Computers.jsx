@@ -5,6 +5,29 @@ import CanvasLoader from '../Loader'
 import { Desktop } from './Scene'
 
 const Computers = ({isMobile}) => {
+  if (isMobile) {
+    // Option 1: Render an image instead of the 3D model
+    // return (
+    //   <Html center>
+    //     <img src="/mobile_alternative.png" alt="Mobile Model" style={{ width: '100%', maxWidth: '300px' }} />
+    //   </Html>
+    // );
+    
+    // Option 2: Use a simpler mobile model
+    const mobileModel = useGLTF('/mobile/scene.gltf');
+    return (
+      <mesh>
+        <hemisphereLight intensity={1}/>
+        <pointLight intensity={3} position={[0, -0.25, 0.4]} />
+        <primitive
+          object={mobileModel.scene}
+          scale={0.7}
+          position={[0, -1.80, -2]}
+          rotation={[0, Math.PI, 0]}
+        />
+      </mesh>
+    );
+  }
   const computer = useGLTF('/desktop_pc/scene-optimized-v1.glb')
   return (
     <mesh>

@@ -1,0 +1,11 @@
+Model Information:
+* title:	Apple Pencil & iPad Pro
+* source:	https://sketchfab.com/3d-models/apple-pencil-ipad-pro-405089fc7b7d4509a6e1d35b185db384
+* author:	eltayerkebulan (https://sketchfab.com/eltayerkebulan)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Apple Pencil & iPad Pro" (https://sketchfab.com/3d-models/apple-pencil-ipad-pro-405089fc7b7d4509a6e1d35b185db384) by eltayerkebulan (https://sketchfab.com/eltayerkebulan) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
