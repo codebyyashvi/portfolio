@@ -2,31 +2,39 @@ import { Suspense, useEffect, useState } from 'react'
 import { Canvas } from '@react-three/fiber'
 import { OrbitControls, Preload, useGLTF } from '@react-three/drei'
 import CanvasLoader from '../Loader'
+import { Html } from '@react-three/drei'
 import { Desktop } from './Scene'
 
 const Computers = ({isMobile}) => {
   if (isMobile) {
     // Option 1: Render an image instead of the 3D model
-    // return (
-    //   <Html center>
-    //     <img src="/mobile_alternative.png" alt="Mobile Model" style={{ width: '100%', maxWidth: '300px' }} />
-    //   </Html>
-    // );
+    return (
+      <Html center>
+        <img
+          src="/mobile.jpg" // must be in /public folder
+          alt="Mobile"
+          style={{
+            maxWidth: '300px',
+            borderRadius: '10px',
+          }}
+        />
+      </Html>
+    );
     
     // Option 2: Use a simpler mobile model
-    const mobileModel = useGLTF('/mobile/scene.gltf');
-    return (
-      <mesh>
-        <hemisphereLight intensity={1}/>
-        <pointLight intensity={3} position={[0, -0.25, 0.4]} />
-        <primitive
-          object={mobileModel.scene}
-          scale={0.7}
-          position={[0, -1.80, -2]}
-          rotation={[0, Math.PI, 0]}
-        />
-      </mesh>
-    );
+    // const mobileModel = useGLTF('/mobile/scene.gltf');
+    // return (
+    //   <mesh>
+    //     <hemisphereLight intensity={1}/>
+    //     <pointLight intensity={3} position={[0, -0.25, 0.4]} />
+    //     <primitive
+    //       object={mobileModel.scene}
+    //       scale={0.7}
+    //       position={[0, -1.80, -2]}
+    //       rotation={[0, Math.PI, 0]}
+    //     />
+    //   </mesh>
+    // );
   }
   const computer = useGLTF('/desktop_pc/scene-optimized-v1.glb')
   return (
