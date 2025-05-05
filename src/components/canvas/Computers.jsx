@@ -9,16 +9,19 @@ const Computers = ({isMobile}) => {
   if (isMobile) {
     // Option 1: Render an image instead of the 3D model
     return (
-      <Html center>
-        <img
-          src="/mobile.jpg" // must be in /public folder
-          alt="Mobile"
-          style={{
-            maxWidth: '300px',
-            borderRadius: '10px',
-          }}
-        />
-      </Html>
+      <mesh>
+        <Html center>
+          <img
+            src="/mobile.jpg" // must be in /public folder
+            alt="Mobile"
+            style={{
+              maxWidth: '300px',
+              borderRadius: '10px',
+            }}
+          />
+        </Html>
+
+      </mesh>
     );
     
     // Option 2: Use a simpler mobile model
@@ -61,7 +64,17 @@ const ComputersCanvas = () => {
     };
   }, []);
   
-
+  if (isMobile) {
+    return (
+      <div className="w-full h-[500px] flex justify-center items-center pt-[700px]">
+        <img
+          src="/mobile.jpg"
+          alt="Mobile fallback"
+          className="max-w-[80%] rounded-lg shadow-lg"
+        />
+      </div>
+    );
+  }
   return (
     <Canvas
       frameloop='demand'
