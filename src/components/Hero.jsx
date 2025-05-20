@@ -24,7 +24,7 @@ const Hero = () => {
           {/* Image on top for mobile */}
           {isMobile && (
             <div className='w-full flex justify-center mb-4'>
-              <img src={me} alt="me" className='rounded-full w-40 h-40' />
+              <img src={me} alt="me" className='rounded-full w-40 h-60' />
             </div>
           )}
 
