@@ -66,7 +66,7 @@ const ComputersCanvas = () => {
   
   if (isMobile) {
     return (
-      <div className="w-full h-[1200px] flex justify-center items-center pt-[700px]">
+      <div className="w-full h-[1000px] flex justify-center items-center pt-[700px]">
         <img
           src="/mobile.jpg"
           alt="Mobile fallback"
