@@ -8,12 +8,12 @@ import {
     mongodb,
     git,
     tripguide,
-    threejs,
+    // threejs,
     // html,
     // css,
     // javascript,
     // typescript,
-    // reactjs,
+    reactjs,
     nextjs
   } from "../assets";
   // import javascript from "../assets/tech/javascript.png";
@@ -86,18 +86,18 @@ import {
     //   name: "TypeScript",
     //   icon: typescript,
     // },
-    // {
-    //   name: "React JS",
-    //   icon: reactjs,
-    // },
+    {
+      name: "React JS",
+      icon: reactjs,
+    },
     {
       name: "Next JS",
       icon: nextjs,
     },
-    {
-      name: "Tailwind CSS",
-      icon: tailwind,
-    },
+    // {
+    //   name: "Tailwind CSS",
+    //   icon: tailwind,
+    // },
     {
       name: "Node JS",
       icon: nodejs,
@@ -106,10 +106,10 @@ import {
       name: "MongoDB",
       icon: mongodb,
     },
-    {
-      name: "Three JS",
-      icon: threejs,
-    },
+    // {
+    //   name: "Three JS",
+    //   icon: threejs,
+    // },
     {
       name: "git",
       icon: git,
