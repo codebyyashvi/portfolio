@@ -9,11 +9,12 @@ import {
     git,
     tripguide,
     threejs,
-    html,
-    css,
-    javascript,
-    typescript,
-    reactjs
+    // html,
+    // css,
+    // javascript,
+    // typescript,
+    // reactjs,
+    nextjs
   } from "../assets";
   // import javascript from "../assets/tech/javascript.png";
   // import typescript from "../assets/tech/typescript.png";
@@ -24,7 +25,7 @@ import {
   import infosys from '../assets/company/infosys.png'
   import flip from '../assets/company/flip.webp'
   import wood from '../assets/company/wood.png'
-  import nextjs from '../assets/tech/nextjs.png'
+  // import nextjs from '../assets/tech/nextjs.png'
   import scikit from '../assets/tech/scikit.png'
   import mysql from '../assets/tech/mysql.png'
   import ml from '../assets/tech/ml.png'
@@ -69,26 +70,26 @@ import {
   ];
   
   const technologies = [
-    {
-      name: "HTML",
-      icon: html,
-    },
-    {
-      name: "CSS",
-      icon: css,
-    },
-    {
-      name: "JavaScript",
-      icon: javascript,
-    },
-    {
-      name: "TypeScript",
-      icon: typescript,
-    },
-    {
-      name: "React JS",
-      icon: reactjs,
-    },
+    // {
+    //   name: "HTML",
+    //   icon: html,
+    // },
+    // {
+    //   name: "CSS",
+    //   icon: css,
+    // },
+    // {
+    //   name: "JavaScript",
+    //   icon: javascript,
+    // },
+    // {
+    //   name: "TypeScript",
+    //   icon: typescript,
+    // },
+    // {
+    //   name: "React JS",
+    //   icon: reactjs,
+    // },
     {
       name: "Next JS",
       icon: nextjs,
