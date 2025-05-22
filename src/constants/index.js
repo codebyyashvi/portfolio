@@ -22,15 +22,19 @@ import {
   // import css from "../assets/tech/css.png";
   // import reactjs from "../assets/tech/reactjs.png";
   import fall from '../assets/company/fall.png'
+  import organ from '../assets/organ.png'
   import infosys from '../assets/company/infosys.png'
   import flip from '../assets/company/flip.webp'
   import wood from '../assets/company/wood.png'
+  import IIITV from '../assets/company/iiitv.png'
+  import campus from '../assets/campus.png'
   // import nextjs from '../assets/tech/nextjs.png'
   import scikit from '../assets/tech/scikit.png'
   import mysql from '../assets/tech/mysql.png'
   import ml from '../assets/tech/ml.png'
   import chatbot from '../assets/Chatbot.png'
   import netflix from '../assets/Netflix.png'
+  import sign from '../assets/sign.png'
   import dice from '../assets/DiceGame.png'
   import mastanee from '../assets/Mastanee.png'
   import farmer from '../assets/farmer.jpg'
@@ -130,6 +134,18 @@ import {
   
   const experiences = [
     {
+      title: "Hack The Future",
+      company_name: "IIITV-ICD",
+      icon: IIITV,
+      iconBg: "#E6DEDD",
+      date: "28th - 30th March 2025",
+      points: [
+        "We secured 2nd place in the Hackathon, showcasing our innovative approach to problem-solving.",
+        "SignMaster is an interactive learning platform designed to help individuals, especially the deaf and mute community, learn American Sign Language (ASL) in an engaging and structured way.",
+        "It includes three learning levels, interactive quizzes, games, AI-powered tools, and a progress tracker to ensure an immersive and enjoyable learning experience.",
+      ],
+    },
+    {
       title: "Infosys Springboard iAccelerate Women's Hackathon",
       company_name: "Infosys Springboard",
       icon: infosys,
@@ -205,6 +221,28 @@ import {
   
   const projects = [
     {
+      name: "VitalBloom",
+      description:
+        "An organ donation platform connecting donors and recipients, ensuring timely transplants and saving lives. It includes donor and recipient matching and view donors and recipients.",
+      tags: [
+        {
+          name: "MySQL",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "Node JS",
+          color: "green-text-gradient",
+        },
+        {
+          name: "React JS",
+          color: "pink-text-gradient",
+        },
+      ],
+      image: organ,
+      source_code_link: "https://vitalbloom-2dkscfym8-yashvis-projects-b766d513.vercel.app/",
+      isVercel: true
+    },
+    {
       name: "AI Chatbot",
       description:
         "Built an AI-powered chatbot using the Hugging Face API, leveraging NLP techniques for natural and interactive conversations.",
@@ -223,22 +261,44 @@ import {
       isVercel: false
     },
     {
-      name: "Netflix Clone",
+      name: "Campus Nexus",
       description:
-        "Designed a Netflix UI clone with responsive web design using HTML, CSS, and JavaScript, improving frontend skills.",
+        "Campus Nexus is a platform where students can see their campus schedules like bus schedules, exam schedules, and other important notices. It is a web application that is made using Python-Flask and Streamlit.",
       tags: [
         {
-          name: "HTML",
+          name: "Flask",
           color: "blue-text-gradient",
         },
         {
-          name: "CSS",
+          name: "MongoDB",
+          color: "green-text-gradient",
+        },
+        {
+          name: "Streamlit",
+          color: "pink-text-gradient",
+        },
+      ],
+      image: campus,
+      source_code_link: "https://software-engineering-5eb1.onrender.com",
+      isVercel: true
+    },
+    {
+      name: "Sign Master",
+      description:
+        "SignMaster is an interactive platform that helps the deaf and mute community learn American Sign Language (ASL) through three learning levels, quizzes, games, AI tools, and a progress tracker for a fun and structured experience.",
+      tags: [
+        {
+          name: "Django",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "Sqlite",
           color: "green-text-gradient",
         },
       ],
-      image: netflix,
-      source_code_link: "https://netflix-hqwf2w9dn-yashvis-projects-b766d513.vercel.app/",
-      isVercel: true
+      image: sign,
+      source_code_link: "https://github.com/codebyyashvi/Hack-the-Future",
+      isVercel: false
     },
     {
       name: "Dice Game",
@@ -257,28 +317,6 @@ import {
       image: dice,
       source_code_link: "https://dice-game-5n028u84c-yashvis-projects-b766d513.vercel.app/",
       isVercel: true
-    },
-    {
-      name: "Mastanee-Music Mansion",
-      description:
-        "A music playlist website with an attractive design, offering the latest songs, including K-pop, old hits, and more.",
-      tags: [
-        {
-          name: "HTML",
-          color: "blue-text-gradient",
-        },
-        {
-          name: "CSS",
-          color: "green-text-gradient",
-        },
-        {
-          name: "JavaScript",
-          color: "pink-text-gradient",
-        },
-      ],
-      image: mastanee,
-      source_code_link: "https://github.com/codebyyashvi/Mastanee-MusicMansion",
-      isVercel: false
     },
     {
       name: "Farmer's Lifeline",
