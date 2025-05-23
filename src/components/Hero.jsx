@@ -38,6 +38,18 @@ const Hero = () => {
               <p className={`${styles.heroSubText} mt-2 text-white-100`}>
                 I develop AI chatbot using Hugging <br className='sm:block hidden'/>Face API, along with mobile and <br className='sm:block hidden'/> web applications.
               </p>
+              <div className="mt-4 text-white text-[14px] sm:text-[16px] space-y-2">
+                <a
+                  href="https://drive.google.com/file/d/1W23PkwHZRGLDYbDKh5AbmJspLIuqsOeR/view?usp=drivesdk"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-[#8c58fd] underline hover:text-white transition duration-300"
+                >
+                  Resume
+                </a>
+                <div>📞 +91-XXXXXXXXXX</div>
+                <div>📧 yashvi@example.com</div>
+              </div>
             </div>
           </div>
           {!isMobile && (<div className='mx-auto my-2'>
