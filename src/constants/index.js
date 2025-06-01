@@ -261,16 +261,16 @@ import {
       isVercel: false
     },
     {
-      name: "Campus Nexus",
+      name: "QueryHub",
       description:
-        "Campus Nexus is a platform where students can see their campus schedules like bus schedules, exam schedules, and other important notices. It is a web application that is made using Python-Flask and Streamlit.",
+        "Developed QueryHub, an AI app using LangChain, OpenAI, and FAISS-based RAG to answer queries from PDFs, videos, and YouTube links with a Streamlit frontend and seamless video transcription integration.",
       tags: [
         {
-          name: "Flask",
+          name: "LangChain",
           color: "blue-text-gradient",
         },
         {
-          name: "MongoDB",
+          name: "VectorDB - FAISS",
           color: "green-text-gradient",
         },
         {
@@ -279,7 +279,7 @@ import {
         },
       ],
       image: campus,
-      source_code_link: "https://software-engineering-5eb1.onrender.com",
+      source_code_link: "https://queryhub-04wc.onrender.com/",
       isVercel: true
     },
     {
