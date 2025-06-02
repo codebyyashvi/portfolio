@@ -40,15 +40,15 @@ const Hero = () => {
               </p>
               <div className="mt-4 text-white text-[14px] sm:text-[16px] space-y-2">
                 <a
-                  href="https://drive.google.com/file/d/1W23PkwHZRGLDYbDKh5AbmJspLIuqsOeR/view?usp=drivesdk"
+                  href="https://drive.google.com/file/d/1jZ2Pt064RCjO3VipEAECMvarmq68NLzy/view?usp=sharing"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-[#8c58fd] underline hover:text-white transition duration-300"
                 >
                   Resume
                 </a>
-                <div>📞 +91-XXXXXXXXXX</div>
-                <div>📧 yashvi@example.com</div>
+                <div>📞 +91-9313174260</div>
+                <div>📧 yashvikhatri26@gmail.com</div>
               </div>
             </div>
           </div>
