@@ -305,24 +305,6 @@ import {
       isVercel: false
     },
     {
-      name: "Sign Master",
-      description:
-        "SignMaster is an interactive platform that helps the deaf and mute community learn American Sign Language (ASL) through three learning levels, quizzes, games, AI tools, and a progress tracker for a fun and structured experience.",
-      tags: [
-        {
-          name: "Django",
-          color: "blue-text-gradient",
-        },
-        {
-          name: "Sqlite",
-          color: "green-text-gradient",
-        },
-      ],
-      image: sign,
-      source_code_link: "https://github.com/codebyyashvi/Hack-the-Future",
-      isVercel: false
-    },
-    {
       name: "Dice Game",
       description:
         "This Dice Game is only made using ReactJS, one can enjoy this game by just rolling the dice. The design of this game is also much attractive and unique.",
