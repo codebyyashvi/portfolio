@@ -20,7 +20,7 @@ const Hero = () => {
   }, [])
   return (
     <section className='relative w-full h-[160vh] mx-auto'>
-        <div className={`${styles.paddingX} absolute inset-0 top-[120px] max-w-7xl mx-auto flex flex-col md:flex-row items-start gap-5`}>
+        <div className={`${styles.paddingX} absolute inset-0 top-[120px] max-w-7xl mx-auto flex flex-col md:flex-row items-start gap-5 pointer-events-auto z-10`}>
           {/* Image on top for mobile */}
           {isMobile && (
             <div className='w-full flex justify-center mb-4'>
@@ -36,13 +36,11 @@ const Hero = () => {
             <div>
               <h1 className={`${styles.heroHeadText} sm:text-[34px] text-white`}>Hi, I'm <span className='text-[#8c58fd]'>Yashvi</span></h1>
               <p className={`${styles.heroSubText} mt-2 text-white-100`}>
-                I develop AI chatbot using Hugging <br className='sm:block hidden'/>Face API, along with mobile and <br className='sm:block hidden'/> web applications.
+                I am a passionate AI developer<br className='sm:block hidden'/> built many projects in AI as well as in web.
               </p>
               <div className="mt-4 text-white text-[14px] sm:text-[16px] space-y-2">
                 <a
-                  href="https://drive.google.com/file/d/1jZ2Pt064RCjO3VipEAECMvarmq68NLzy/view?usp=sharing"
-                  target="_blank"
-                  rel="noopener noreferrer"
+                  href="/Resume.pdf"
                   className="text-[#8c58fd] underline hover:text-white transition duration-300"
                 >
                   Resume
@@ -58,7 +56,7 @@ const Hero = () => {
           
         </div>
       <ComputersCanvas />
-      <div className='absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center'>
+      <div className='absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center pointer-events-auto'>
         <a href="#about">
           <div className='w-[35px] h-[64px] rounded-3xl border-4 border-secondary flex justify-center items-start p-2'>
             <motion.div

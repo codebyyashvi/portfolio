@@ -21,6 +21,7 @@ import {
   // import html from "../assets/tech/html.png";
   // import css from "../assets/tech/css.png";
   // import reactjs from "../assets/tech/reactjs.png";
+  import LLM from '../assets/tech/LLM.png'
   import fall from '../assets/company/fall.png'
   import organ from '../assets/organ.png'
   import infosys from '../assets/company/infosys.png'
@@ -38,6 +39,14 @@ import {
   import dice from '../assets/DiceGame.png'
   import mastanee from '../assets/Mastanee.png'
   import farmer from '../assets/farmer.jpg'
+  import NLP from '../assets/tech/NLP.png'
+  import DL from '../assets/tech/DL.png'
+  import study from '../assets/studyMinutes.png'
+  import speak from '../assets/speak.png'
+  import queryhub from '../assets/queryhub.png'
+  import amazon from '../assets/company/amazon.png'
+  import google from '../assets/company/google.png'
+  import { col } from "framer-motion/client";
   
   export const navLinks = [
     {
@@ -56,11 +65,11 @@ import {
   
   const services = [
     {
-      title: "Web Developer",
+      title: "AI/ML Developer",
       icon: web,
     },
     {
-      title: "React Developer",
+      title: "Full Stack Developer",
       icon: mobile,
     },
     {
@@ -91,12 +100,24 @@ import {
     //   icon: typescript,
     // },
     {
+      name: "Deep Learning",
+      icon: DL
+    },
+    {
       name: "React JS",
       icon: reactjs,
     },
     {
       name: "Next JS",
       icon: nextjs,
+    },
+    {
+      name: "LLM",
+      icon: LLM
+    },
+    {
+      name: "NLP",
+      icon: NLP
     },
     // {
     //   name: "Tailwind CSS",
@@ -132,62 +153,47 @@ import {
     },
   ];
   
+  const workExperiences = [
+    {
+      title: "AI Engineer Intern",
+      company_name: "Breevya",
+      iconBg: "#E6DEDD",
+      date: "January 2026 - February 2026",
+      points: [
+        "Built and deployed an AI-powered voice automation platform featuring real-time conversational agents, agent-based workflow orchestration, and Twilio-based outbound customer calling using company credentials.",
+      ],
+    },
+  ];
+
   const experiences = [
+    {
+      title: "Amazon ML Challenge",
+      company_name: "Amazon",
+      icon: amazon,
+      iconBg: "#E6DEDD",
+      date: "October 11 - 13, 2025",
+      points: [
+        "Built a multimodal price prediction system on 75K products using BERT (text) and BLIP-2 (images) with log-transform, adaptive SMAPE-weighted loss, and late fusion, achieving 49.52 SMAPE.",
+      ],
+    },
     {
       title: "Hack The Future",
       company_name: "IIITV-ICD",
       icon: IIITV,
       iconBg: "#E6DEDD",
-      date: "28th - 30th March 2025",
+      date: "March 28 - 30, 2025",
       points: [
-        "We secured 2nd place in the Hackathon, showcasing our innovative approach to problem-solving.",
-        "SignMaster is an interactive learning platform designed to help individuals, especially the deaf and mute community, learn American Sign Language (ASL) in an engaging and structured way.",
-        "It includes three learning levels, interactive quizzes, games, AI-powered tools, and a progress tracker to ensure an immersive and enjoyable learning experience.",
+        "Secured 2nd place by building an inclusive learning platform for mute and deaf students with ASL modules, quizzes, games, and real-time Speech-to-Text and Text-to-Sign conversion.",
       ],
     },
     {
-      title: "Infosys Springboard iAccelerate Women's Hackathon",
-      company_name: "Infosys Springboard",
-      icon: infosys,
-      iconBg: "#E6DEDD",
-      date: "January 2025 - Present",
-      points: [
-        "Proposed an AI-powered real-time Sign Language translation extension to improve accessibility for hearing-impaired users.",
-        "Designed a multi-step workflow involving Speech-to-Text conversion, Text-to-Sign transformation, and AI-based sign generation using pose estimation models and transformer-based NLP models.",
-        "Conceptualized an interactive ISL learning module for users to learn and understand sign language more effectively.",
-      ],
-    },
-    {
-      title: "Hack This Fall Virtual",
-      company_name: "Devfolio",
-      icon: fall,
+      title: "Google Girl Hackathon",
+      company_name: "Google",
+      icon: google,
       iconBg: "#383E56",
-      date: "November 8 - 10, 2024",
+      date: "January 20 - March 11, 2025",
       points: [
-        "We implemented the environment friendly website that reduce the waste from the industries.",
-        "The waste material of some industries is the raw material of other industries and in our website we were selling those waste materials to the other industries with a chatbot to get knowledge about the waste materials.",
-        " Developed EcoLink, a website reducing industrial waste by connecting businesses. Integrated an AI chatbot, EcoBot, for real-time assistance.",
-      ],
-    },
-    {
-      title: "Flipkart Grid 6.0 - Robotics Challenge",
-      company_name: "Unstop",
-      icon: flip,
-      iconBg: "#383E56",
-      date: "August 2024 - December 2024",
-      points: [
-        "Qualified Round 1 of Flipkart Grid 6.0- Robotics Challenge by solving E-commerce-related automation problems.",
-      ],
-    },
-    {
-      title: "Woodpecker's Hackathon",
-      company_name: "Unstop",
-      icon: wood,
-      iconBg: "#E6DEDD",
-      date: "June 2024 - August 2024",
-      points: [
-        "Implemented on the theme AI-Powered Data Query Interface.",
-        "Led the development of Rapid Query, an AI-powered chatbot improving search efficiency by 30%, reducing response time for complex queries.",
+        "Participated in Round 1 coding assessment and progressed through resume screening and Technical Round 1 for Google Summer Internship, reaching final Technical Round 2.",
       ],
     },
   ];
@@ -221,44 +227,60 @@ import {
   
   const projects = [
     {
-      name: "VitalBloom",
+      name: "StudyMinutes",
       description:
-        "An organ donation platform connecting donors and recipients, ensuring timely transplants and saving lives. It includes donor and recipient matching and view donors and recipients.",
+        "AI-powered study assistant that transforms unstructured notes (text, PDFs, audio) into structured content and features a RAG-based chatbot using semantic search (Qdrant) with session-based chat history (MongoDB).",
       tags: [
         {
-          name: "MySQL",
+          name: "MongoDB",
           color: "blue-text-gradient",
         },
         {
-          name: "Node JS",
+          name: "Python (FastAPI)",
           color: "green-text-gradient",
         },
         {
           name: "React JS",
           color: "pink-text-gradient",
         },
+        {
+          name: "RAG",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "Qdrant",
+          color: "green-text-gradient",
+        }
       ],
-      image: organ,
-      source_code_link: "https://vitalbloom-2dkscfym8-yashvis-projects-b766d513.vercel.app/",
+      image: study,
+      source_code_link: "https://www.studyminutes.tech",
       isVercel: true
     },
     {
-      name: "AI Chatbot",
+      name: "Speak2Hire",
       description:
-        "Built an AI-powered chatbot using the Hugging Face API, leveraging NLP techniques for natural and interactive conversations.",
+        "Developed a voice-enabled platform that converts resumes and text into natural-sounding speech using Murf AI. Enabled multi-language support with diverse voice accents and gender options, delivering an interactive and accessible way to present professional profiles.",
       tags: [
         {
           name: "Python",
           color: "blue-text-gradient",
         },
         {
-          name: "Hugging Face API",
+          name: "Murf AI API",
           color: "green-text-gradient",
         },
+        {
+          name: "Flask",
+          color: "pink-text-gradient",
+        },
+        {
+          name: "React JS",
+          color: "blue-text-gradient",
+        }
       ],
-      image: chatbot,
-      source_code_link: "https://github.com/codebyyashvi/Chatbot",
-      isVercel: false
+      image: speak,
+      source_code_link: "https://speak2-hire.vercel.app",
+      isVercel: true
     },
     {
       name: "QueryHub",
@@ -278,9 +300,9 @@ import {
           color: "pink-text-gradient",
         },
       ],
-      image: campus,
-      source_code_link: "https://queryhub-04wc.onrender.com/",
-      isVercel: true
+      image: queryhub,
+      source_code_link: "https://github.com/codebyyashvi/QueryHub",
+      isVercel: false
     },
     {
       name: "Sign Master",
@@ -338,4 +360,4 @@ import {
     },
   ];
   
-  export { services, technologies, experiences, testimonials, projects, fall };
+  export { services, technologies, workExperiences, experiences, testimonials, projects, fall };
